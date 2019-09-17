@@ -37,7 +37,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-self: flex-end;
-    border-right: 10px solid var(--accent-white);
+    /*    border-right: 10px solid var(--accent-white);*/
 }
 
 #introPic {
@@ -47,7 +47,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /*    border-radius: 5%;*/
+    align-self: center;
+    justify-content: center;
 }
 
 .introWrapper:nth-child(1) {
@@ -63,35 +64,44 @@ body {
 }
 
 .introWrapper {
-    background-color: rgba(128, 128, 128, 0.5);
-    width: 80%;
+    /*    background-color: rgba(128, 128, 128, 0.5);*/
+    width: 60%;
     padding: 10px;
-    /*    border-radius: 20px;
-    */
-    z-index: 1;
-    position: relative;
+    border-radius: 10px;
 }
-
-
 
 /*
-.introWrapper:after {
-    background-color: var(--main-bg-color);
-    bottom: 0;
-    content: '';
-    display: block;
-    height: 20%;
-    left: 0;
-    position: absolute;
-    right: 0;
-    transform: skewY(-1.0deg);
-    transform-origin: 100%;
-    z-index: -1;
+#introBorder {
+    width: 2px;
+    height: 95%;
+    align-self: center;
+    background-color: var(--accent-white);
+    margin: 30px;
 }
 */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px;
+    background-color: var(--accent-white);
+}
 
 .navLinks {
     list-style-type: none;
+}
+
+.navLinks > li {
+    display: inline;
+    margin-left: 20px;
+    color: var(--accent-green);
+}
+
+.navLinks > li:nth-child(2) {
+    color: var(--accent-blue);
+}
+
+.navLinks > li:nth-child(3) {
+    color: var(--accent-orange);
 }
 
 /*----------------MEDIA QUERY----------------*/
