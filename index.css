@@ -1,9 +1,10 @@
 :root {
     --main-bg-color: #05251b;
-    --accent-green: #13a577;
+    /*    --accent-green: #13a577;*/
+    --accent-green: #1d795c;
     --accent-blue: #218b99;
     --accent-orange: #ed5b24;
-    --accent-white: rgb(240, 240, 240);
+    --accent-white: #f2f2f2;
 }
 
 * {
