@@ -82,8 +82,9 @@ body {
 nav {
     display: flex;
     justify-content: flex-end;
-    padding: 10px;
+    padding: 20px;
     background-color: var(--accent-white);
+    margin-bottom: 100px;
 }
 
 .navLinks {
@@ -92,7 +93,7 @@ nav {
 
 .navLinks > li {
     display: inline;
-    margin-left: 20px;
+    margin-left: 40px;
     color: var(--accent-green);
 }
 
@@ -103,6 +104,24 @@ nav {
 .navLinks > li:nth-child(3) {
     color: var(--accent-orange);
 }
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.mainSection {
+    width: 80%;
+    margin-bottom: 100px;
+}
+
+.mainSection > h1 {
+    background-color: rgba(242, 242, 242, 0.5);
+    padding: 20px 10px 20px 10px;
+}
+
+
 
 /*----------------MEDIA QUERY----------------*/
 
@@ -125,6 +144,24 @@ nav {
     .introWrapper {
         padding: 0px;
         font-size: .8em;
+    }
+
+    nav {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+
+
+    .navLinks {
+        padding-left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+    .navLinks > li {
+        margin-left: 0px;
     }
 }
 
