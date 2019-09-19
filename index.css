@@ -109,21 +109,35 @@ main {
     width: 100%;
 }
 
-#about {
+.textSection {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
 }
 
-.aboutWrapper {
+.textWrapper {
     width: 80%;
 }
 
 .sectionHeader {
-    background-color: rgba(242, 242, 242, 0.5);
+    /*    background-color: rgba(242, 242, 242, 0.5);*/
     padding: 20px 10px 20px 10px;
     margin-bottom: 100px;
+    color: var(--accent-white);
+}
+
+#aboutHeader {
+    background-color: var(--accent-green);
+
+}
+
+#projectHeader {
+    background-color: var(--accent-blue);
+}
+
+#contactHeader {
+    background-color: var(--accent-orange);
 }
 
 #projectSection {
