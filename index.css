@@ -108,7 +108,8 @@ nav {
 main {
     width: 100%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 .mainSection {
@@ -116,12 +117,18 @@ main {
     margin-bottom: 100px;
 }
 
+.aboutWrapper {}
+
 .mainSection > h1 {
     background-color: rgba(242, 242, 242, 0.5);
     padding: 20px 10px 20px 10px;
 }
 
-
+.project {
+    width: 50%;
+    height: 200px;
+    border: 5px solid red;
+}
 
 /*----------------MEDIA QUERY----------------*/
 
@@ -147,7 +154,6 @@ main {
     }
 
     nav {
-        justify-content: center;
         margin-bottom: 50px;
     }
 
