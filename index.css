@@ -84,7 +84,17 @@ nav {
     justify-content: flex-end;
     padding: 20px;
     background-color: var(--accent-white);
-    margin-bottom: 100px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+.sticky + main {
+    padding-top: 100px;
 }
 
 .navLinks {
@@ -107,6 +117,7 @@ nav {
 
 main {
     width: 100%;
+    margin-top: 50px;
 }
 
 .textSection {
@@ -175,10 +186,23 @@ main {
 
 #react {
     background-color: var(--accent-orange);
+    color: black;
+    font-size: 8em;
+    position: relative;
+}
+
+.fontawesomeWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
 }
 
 #random {
     background-color: var(--accent-white);
+}
+
+.spacer {
+    height: 1000px;
 }
 
 /*----------------MEDIA QUERY----------------*/

@@ -9,6 +9,7 @@
     <!--    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">-->
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <link href="index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
 </head>
 
@@ -29,16 +30,15 @@
         <div id="introPic"></div>
     </section>
 
-    <header>
-        <nav>
-            <ul class="navLinks">
-                <li>About Me</li>
-                <li>Projects</li>
-                <!--                <li>Random Coding</li>-->
-                <li>Contact Me</li>
-            </ul>
-        </nav>
-    </header>
+    <nav id="navBar">
+        <ul class="navLinks">
+            <li>About Me</li>
+            <li>Projects</li>
+            <!--                <li>Random Coding</li>-->
+            <li>Contact Me</li>
+        </ul>
+    </nav>
+
     <main>
         <section id="about" class="textSection">
             <div class="textWrapper">
@@ -66,6 +66,9 @@
             </div>
             <div class="projectRow">
                 <div class="project" id="react">
+                    <div class="fontawesomeWrapper">
+                        <i class="fab fa-react"></i>
+                    </div>
                 </div>
                 <div class="project" id="random">
                 </div>
@@ -75,6 +78,12 @@
         <section id="contact" class="textSection">
             <div class="textWrapper">
                 <h1 class="sectionHeader" id="contactHeader">Contact Me</h1>
+                <p>Email me!</p>
+                <p>Connect with me on LinkedIn!</p>
+                <p>Come throw a frisbee with me!</p>
+                <p>Thanks for visiting! I look forward to speaking with you soon!</p>
+                <div class="spacer"></div>
+
             </div>
         </section>
     </main>
