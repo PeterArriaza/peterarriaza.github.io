@@ -1,11 +1,16 @@
 'use strict';
 
-window.addEventListener("load", () => {
+//Wait until the page is loaded to fire animations on 
+//landing page
+$(document).ready(function () {
     document.querySelector("#introWords").classList.add("loaded");
+
 });
 
+// make Navbar "stick" on scroll
 window.onscroll = function () {
-    makeNavStick()
+    makeNavStick();
+    highlightSection();
 };
 
 // Get the navbar
@@ -21,4 +26,33 @@ function makeNavStick() {
     } else {
         navbar.classList.remove("sticky");
     }
+}
+
+// move to sections on click
+$('.scrollToSection').on('click', function () {
+    let classes = this.className;
+    let headerOffset = 70;
+    if (classes.includes('aboutSection')) {
+        $('html,body').animate({
+                scrollTop: ($("#about").offset().top) + headerOffset
+            },
+            'slow');
+    } else if (classes.includes('projectSection')) {
+        $('html,body').animate({
+                scrollTop: $("#projectSection").offset().top + headerOffset
+            },
+            'slow');
+    } else if (classes.includes('contactSection')) {
+        $('html,body').animate({
+                scrollTop: $("#contact").offset().top + headerOffset
+            },
+            'slow');
+    } else {
+        console.log('section to scroll not recognized');
+    }
+});
+
+function highlightSection() {
+    let aboutPos = document.getElementById("about").offsetTop;
+    console.log(aboutPos);
 }

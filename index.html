@@ -16,13 +16,13 @@
 <body>
     <section id="intro">
         <div id="introWords">
-            <div class="introWrapper">
+            <div class="introWrapper scrollToSection aboutSection">
                 <h1>Hi there! I'm Pete Arriaza.</h1>
             </div>
-            <div class="introWrapper">
+            <div class="introWrapper scrollToSection projectSection">
                 <h1>I'm a full stack web developer.</h1>
             </div>
-            <div class="introWrapper">
+            <div class="introWrapper scrollToSection contactSection">
                 <h1>Let's make something exciting together!</h1>
             </div>
         </div>
@@ -32,10 +32,10 @@
 
     <nav id="navBar">
         <ul class="navLinks">
-            <li>About Me</li>
-            <li>Projects</li>
+            <li class="scrollToSection aboutSection">About Me</li>
+            <li class="scrollToSection projectSection">Projects</li>
             <!--                <li>Random Coding</li>-->
-            <li>Contact Me</li>
+            <li class="scrollToSection contactSection">Contact Me</li>
         </ul>
     </nav>
 
@@ -45,13 +45,13 @@
                 <h1 class="sectionHeader" id="aboutHeader">About Me</h1>
                 <p>A mechanical engineer by trade, I recently graduated from the Thinkful online full stack web development bootcamp.
 
-                    I am seeking a position as a web developer because I enjoy constantly solving new problems and making products that help people.
+                    I am seeking a position as a web developer because I enjoy solving new problems and making products that help people.
 
                     I love fitting API's together and developing user flows and experiences.</p>
 
                 <p>In my free time, I play ultimate frisbee and practice yoga. I also enjoy jamming on my guitar and drawing cards for my friends/family.
 
-                    I like to think my penchant for music and the arts bleeds into aspects of my designs as I take pride in finding the right fonts, colors, and layouts for my projects.</p>
+                    I like to think my natural inclination for music and the arts influences aspects of my designs as I find the right fonts, colors, and layouts for my projects.</p>
             </div>
         </section>
 
@@ -71,6 +71,9 @@
                     </div>
                 </div>
                 <div class="project" id="random">
+                    <div class="randomWrapper">
+                        <h2>Random Bits of Coding</h2>
+                    </div>
                 </div>
             </div>
 
@@ -78,10 +81,25 @@
         <section id="contact" class="textSection">
             <div class="textWrapper">
                 <h1 class="sectionHeader" id="contactHeader">Contact Me</h1>
-                <p>Email me!</p>
-                <p>Connect with me on LinkedIn!</p>
-                <p>Come throw a frisbee with me!</p>
-                <p>Thanks for visiting! I look forward to speaking with you soon!</p>
+                <p>If you would like to work with me on a project, you can feel free to email me or follow the links below for further information about myself and my work:</p>
+                <div id="contactLinkRow">
+                    <div class="contactLink">
+                        <a href="docs/Arriaza%20Resume.pdf" target="_blank"><i class="far fa-file"></i>
+                            <p>Resume</p>
+                        </a>
+                    </div>
+                    <div class="contactLink">
+                        <a href="https://www.linkedin.com/in/peterarriaza/" target="_blank"><i class="fab fa-linkedin"></i>
+                            <p>Connect with me on LinkedIn!</p>
+                        </a>
+                    </div>
+                    <div class="contactLink">
+                        <a href="https://pada.org/" target="_blank"><i class="fas fa-tree"></i>
+                            <p>Come throw a frisbee with me!</p>
+                        </a>
+                    </div>
+                </div>
+                <h3>Thanks for visiting! I look forward to speaking with you soon!</h3>
                 <div class="spacer"></div>
 
             </div>

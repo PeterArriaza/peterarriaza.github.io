@@ -70,20 +70,12 @@ body {
     border-radius: 10px;
 }
 
-/*
-#introBorder {
-    width: 2px;
-    height: 95%;
-    align-self: center;
-    background-color: var(--accent-white);
-    margin: 30px;
-}
-*/
 nav {
     display: flex;
     justify-content: flex-end;
     padding: 20px;
     background-color: var(--accent-white);
+    height: 100px;
 }
 
 .sticky {
@@ -125,6 +117,11 @@ main {
     flex-direction: column;
     align-items: center;
     margin-bottom: 100px;
+    /*    height: auto !important;*/
+}
+
+section {
+    border: 1px solid white;
 }
 
 .textWrapper {
@@ -132,7 +129,6 @@ main {
 }
 
 .sectionHeader {
-    /*    background-color: rgba(242, 242, 242, 0.5);*/
     padding: 20px 10px 20px 10px;
     margin-bottom: 100px;
     color: var(--accent-white);
@@ -155,12 +151,14 @@ main {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 100px;
 }
 
 .projectRow {
     display: flex;
     justify-content: space-around;
     margin-bottom: 100px;
+    margin-top: 20px;
 }
 
 .project {
@@ -189,21 +187,64 @@ main {
     color: black;
     font-size: 8em;
     position: relative;
+
 }
 
 .fontawesomeWrapper {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #random {
     background-color: var(--accent-white);
+    color: black;
+    text-align: center;
+    position: relative;
+}
+
+.randomWrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#contact {
+    min-height: 100vh;
+}
+
+#contactLinkRow {
+    margin: 50px 0 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contactLink {
+    /*    text-align: center;*/
+    width: 30%;
+}
+
+
+a:visited,
+a:link {
+    color: var(--accent-white);
+    text-decoration: none;
+}
+
+.contactLink a i {
+    font-size: 2em;
+}
+
+#contact .textWrapper {
+    text-align: center;
 }
 
 .spacer {
-    height: 1000px;
+    height: 100px;
 }
+
 
 /*----------------MEDIA QUERY----------------*/
 @media screen and (max-width: 1020px) {
@@ -261,6 +302,14 @@ main {
 
     .navLinks > li {
         margin-left: 0px;
+    }
+
+    #contactLinkRow {
+        flex-direction: column;
+    }
+
+    .contactLink {
+        width: 100%;
     }
 }
 
