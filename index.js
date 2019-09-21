@@ -53,6 +53,30 @@ $('.scrollToSection').on('click', function () {
 });
 
 function highlightSection() {
-    let aboutPos = document.getElementById("about").offsetTop;
-    console.log(aboutPos);
+    let aboutPos = document.getElementById("about").offsetTop - 150;
+    let projectPos = document.getElementById("projectSection").offsetTop - (document.getElementById("about").offsetHeight / 2);
+    let contactPos = document.getElementById("contact").offsetTop - (document.getElementById("projectSection").offsetHeight / 5);
+    let currentPos = window.pageYOffset;
+
+    if (currentPos >= aboutPos && currentPos < projectPos) {
+        document.getElementById("aboutLink").classList.add("underline");
+        document.getElementById("projectLink").classList.remove("underline");
+        document.getElementById("contactLink").classList.remove("underline");
+    } else if (currentPos >= projectPos && currentPos < contactPos) {
+        document.getElementById("projectLink").classList.add("underline");
+        document.getElementById("aboutLink").classList.remove("underline");
+        document.getElementById("contactLink").classList.remove("underline");
+
+    } else if (currentPos >= contactPos) {
+        document.getElementById("projectLink").classList.remove("underline");
+        document.getElementById("aboutLink").classList.remove("underline");
+        document.getElementById("contactLink").classList.add("underline");
+
+    } else if (currentPos < aboutPos) {
+        document.getElementById("projectLink").classList.remove("underline");
+        document.getElementById("aboutLink").classList.remove("underline");
+        document.getElementById("contactLink").classList.remove("underline");
+
+    }
+
 }

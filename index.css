@@ -120,10 +120,6 @@ main {
     /*    height: auto !important;*/
 }
 
-section {
-    border: 1px solid white;
-}
-
 .textWrapper {
     width: 80%;
 }
