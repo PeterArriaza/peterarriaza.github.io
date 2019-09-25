@@ -323,8 +323,8 @@ a:link {
 
     nav {
         margin-bottom: 50px;
+        padding: 10px;
     }
-
 
     .navLinks {
         padding-left: 0;
@@ -338,6 +338,18 @@ a:link {
         margin-left: 0px;
     }
 
+    #sectionUnderline {
+        width: 33%;
+    }
+
+    .highlightAbout {
+        margin-right: 66.666%;
+    }
+
+    .highlightProjects {
+        margin-right: 33.333%;
+    }
+
     #contactLinkRow {
         flex-direction: column;
     }
@@ -345,6 +357,7 @@ a:link {
     .contactLink {
         width: 100%;
     }
+
 }
 
 /*----------------ANIMATIONS----------------*/
