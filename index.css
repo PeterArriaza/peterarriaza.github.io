@@ -68,14 +68,14 @@ body {
     width: 60%;
     padding: 10px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
-nav {
-    display: flex;
-    justify-content: flex-end;
-    padding: 20px;
+#navBar {
     background-color: var(--accent-white);
     height: 100px;
+    display: flex;
+    flex-direction: column;
 }
 
 .sticky {
@@ -89,14 +89,28 @@ nav {
     padding-top: 100px;
 }
 
+#navLinksWrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
 .navLinks {
     list-style-type: none;
+    /*    width: 450px;*/
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navLinks > li {
-    display: inline;
-    margin-left: 40px;
+    display: inline-block;
+    cursor: pointer;
     color: var(--accent-green);
+    width: 150px;
+    text-align: center;
 }
 
 .navLinks > li:nth-child(2) {
@@ -105,6 +119,30 @@ nav {
 
 .navLinks > li:nth-child(3) {
     color: var(--accent-orange);
+}
+
+#sectionUnderline {
+    width: 150px;
+    /*    margin-right: 300px;*/
+    transition: 0.3s ease-in;
+    height: 5px;
+    align-self: flex-end;
+}
+
+.highlightAbout {
+    margin-right: 300px;
+    background-color: var(--accent-green);
+
+}
+
+.highlightProjects {
+    margin-right: 150px;
+    background-color: var(--accent-blue);
+}
+
+.highlightContact {
+    margin-right: 0px;
+    background-color: var(--accent-orange);
 }
 
 main {
@@ -238,7 +276,7 @@ a:link {
 }
 
 .spacer {
-    height: 100px;
+    height: 50px;
 }
 
 

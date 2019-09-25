@@ -34,19 +34,27 @@ $('.scrollToSection').on('click', function () {
     let headerOffset = 70;
     if (classes.includes('aboutSection')) {
         $('html,body').animate({
-                scrollTop: ($("#about").offset().top) + headerOffset
-            },
-            'slow');
+            scrollTop: ($("#about").offset().top) + headerOffset
+        }, 'slow');
+        document.getElementById("sectionUnderline").classList.remove("highlightProjects");
+        document.getElementById("sectionUnderline").classList.remove("highlightContact");
+        document.getElementById("sectionUnderline").classList.add("highlightAbout");
+
     } else if (classes.includes('projectSection')) {
         $('html,body').animate({
-                scrollTop: $("#projectSection").offset().top + headerOffset
-            },
-            'slow');
+            scrollTop: $("#projectSection").offset().top + headerOffset
+        }, 'slow');
+        document.getElementById("sectionUnderline").classList.remove("highlightContact");
+        document.getElementById("sectionUnderline").classList.remove("highlightAbout");
+        document.getElementById("sectionUnderline").classList.add("highlightProjects");
+
     } else if (classes.includes('contactSection')) {
         $('html,body').animate({
-                scrollTop: $("#contact").offset().top + headerOffset
-            },
-            'slow');
+            scrollTop: $("#contact").offset().top + headerOffset
+        }, 'slow');
+        document.getElementById("sectionUnderline").classList.remove("highlightProjects");
+        document.getElementById("sectionUnderline").classList.remove("highlightAbout");
+        document.getElementById("sectionUnderline").classList.add("highlightContact");
     } else {
         console.log('section to scroll not recognized');
     }
@@ -59,24 +67,27 @@ function highlightSection() {
     let currentPos = window.pageYOffset;
 
     if (currentPos >= aboutPos && currentPos < projectPos) {
-        document.getElementById("aboutLink").classList.add("underline");
-        document.getElementById("projectLink").classList.remove("underline");
-        document.getElementById("contactLink").classList.remove("underline");
+        document.getElementById("sectionUnderline").classList.remove("highlightContact");
+        document.getElementById("sectionUnderline").classList.remove("highlightProjects");
+        document.getElementById("sectionUnderline").classList.add("highlightAbout");
+        document.getElementById("sectionUnderline").style.visibility = "visible";
     } else if (currentPos >= projectPos && currentPos < contactPos) {
-        document.getElementById("projectLink").classList.add("underline");
-        document.getElementById("aboutLink").classList.remove("underline");
-        document.getElementById("contactLink").classList.remove("underline");
+        document.getElementById("sectionUnderline").classList.remove("highlightContact");
+        document.getElementById("sectionUnderline").classList.remove("highlightAbout");
+        document.getElementById("sectionUnderline").classList.add("highlightProjects");
 
     } else if (currentPos >= contactPos) {
-        document.getElementById("projectLink").classList.remove("underline");
-        document.getElementById("aboutLink").classList.remove("underline");
-        document.getElementById("contactLink").classList.add("underline");
+        document.getElementById("sectionUnderline").classList.remove("highlightProjects");
+        document.getElementById("sectionUnderline").classList.remove("highlightAbout");
+        document.getElementById("sectionUnderline").classList.add("highlightContact");
 
     } else if (currentPos < aboutPos) {
-        document.getElementById("projectLink").classList.remove("underline");
-        document.getElementById("aboutLink").classList.remove("underline");
-        document.getElementById("contactLink").classList.remove("underline");
+        document.getElementById("sectionUnderline").style.visibility = "hidden";
 
+        //        document.getElementById("sectionUnderline").classList.remove("highlightProjects");
+        //        document.getElementById("sectionUnderline").classList.remove("highlightAbout");
+        //        document.getElementById("sectionUnderline").classList.remove("highlightContact");
+        //
     }
 
-}
+};
