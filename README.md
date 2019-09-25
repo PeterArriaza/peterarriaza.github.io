@@ -5,9 +5,9 @@ Estimated time to code: 6 hours
 
 Things I have learned while coding:
 * CSS animations
-** anything is animatable (sp?) 
-** on hover or through JS change a prop and induce animation
+    * anything is animatable (sp?) 
+    * on hover or through JS change a prop and induce animation
 * HTML, body scroll on click
 * element.offsetposition
-** an effort to use more vanilla JS and less jQuery
+    * an effort to use more vanilla JS and less jQuery
 
