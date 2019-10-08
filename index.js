@@ -89,8 +89,4 @@ function highlightSection() {
     }
 };
 
-$('#beerBelly').hover(function () {
-    $(this > "projectDescription").show();
-}, function () {
-    $(this > "projectDescription"   ).hide();
-});
+
