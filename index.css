@@ -216,12 +216,15 @@ main {
     background-color: var(--accent-blue);
 }
 
-#react i {
+#react {
     background-color: var(--accent-orange);
     color: black;
-    font-size: 8em;
     position: relative;
+    text-align: center;
+}
 
+.fa-react {
+    font-size: 8em;
 }
 
 .fontawesomeWrapper {
