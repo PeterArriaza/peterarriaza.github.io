@@ -216,7 +216,7 @@ main {
     background-color: var(--accent-blue);
 }
 
-#react {
+#react i {
     background-color: var(--accent-orange);
     color: black;
     font-size: 8em;
