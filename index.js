@@ -28,7 +28,8 @@ function makeNavStick() {
     }
 }
 
-// move to sections on click
+// move to sections on click and underline applicable section 
+
 $('.scrollToSection').on('click', function () {
     let classes = this.className;
     let headerOffset = 70;
@@ -60,6 +61,8 @@ $('.scrollToSection').on('click', function () {
     }
 });
 
+// move underline to applicable section based on scroll
+
 function highlightSection() {
     let aboutPos = document.getElementById("about").offsetTop - 150;
     let projectPos = document.getElementById("projectSection").offsetTop - (document.getElementById("about").offsetHeight / 2);
@@ -81,13 +84,13 @@ function highlightSection() {
         document.getElementById("sectionUnderline").classList.remove("highlightAbout");
         document.getElementById("sectionUnderline").classList.add("highlightContact");
 
-    } else if (currentPos < aboutPos) {
+    } else if (currentPos < aboutPos - 50) {
         document.getElementById("sectionUnderline").style.visibility = "hidden";
-
-        //        document.getElementById("sectionUnderline").classList.remove("highlightProjects");
-        //        document.getElementById("sectionUnderline").classList.remove("highlightAbout");
-        //        document.getElementById("sectionUnderline").classList.remove("highlightContact");
-        //
     }
-
 };
+
+$('#beerBelly').hover(function () {
+    $(this > "projectDescription").show();
+}, function () {
+    $(this > "projectDescription"   ).hide();
+});
