@@ -45,43 +45,56 @@
         <section id="about" class="textSection">
             <div class="textWrapper">
                 <h1 class="sectionHeader" id="aboutHeader">About Me</h1>
-                <p>A mechanical engineer by trade, I recently graduated from the Thinkful online full stack web development bootcamp.
+                <p>I currently work as a project engineer at a small full service engineering firm, where I mostly consult our clients on the safety and performance of their chemical processing systems. I am currently enrolled in the Thinkful online full stack web development bootcamp. </p>
 
-                    I am seeking a position as a web developer because I enjoy solving new problems and making products that help people.
+                <p>
+                    I am seeking a position as a web developer because I enjoy solving new problems and making products that help people. Engineering new designs and experiences is what I miss the most from my work with robotics and embedded systems in college and I believe a position as a web developer will allow me to have the largest impact on products that people will use every day. </p>
 
-                    I love fitting API's together and developing user flows and experiences.</p>
+                <p>In my free time, I play ultimate frisbee and practice yoga. I also enjoy jamming on my guitar and tackling various drawing and graphic design projects. I'm currently working on a mural to cover the exposed studs in my basement.
+                </p>
 
-                <p>In my free time, I play ultimate frisbee and practice yoga. I also enjoy jamming on my guitar and drawing cards for my friends/family.
-
-                    I like to think my natural inclination for music and the arts influences aspects of my designs as I find the right fonts, colors, and layouts for my projects.</p>
             </div>
         </section>
 
         <section id="projectSection">
             <h1 class="sectionHeader" id="projectHeader">Projects</h1>
             <div class="projectRow">
-                <div class="project" id="beerBelly" onclick="window.open('https://github.com/PeterArriaza/BeerBelly','_blank');" style="cursor: pointer;">
+                <div class="project" id="beerBelly">
+                    <!--                     onclick="window.open('https://github.com/PeterArriaza/BeerBelly','_blank');" style="cursor: pointer;"-->
+
+                    <!--
                     <div class="projectDescription" style="display: none">
                         <p>Find beer near you!</p>
                         <div class="learnMore">
                             <p class="learnMoreBeerBelly">Learn More</p>
                         </div>
                     </div>
+-->
 
                 </div>
+                <div id="beerBellyModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>A simple one page app integrating Google Maps and a database of beer selling locations to find beer near a location.</p>
+                        <a href="https://github.com/PeterArriaza/BeerBelly" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
                 <div class="project" id="pantry" onclick="window.open('https://github.com/PeterArriaza/pantry','_blank');" style="cursor: pointer;">
                 </div>
             </div>
+
             <div class="projectRow">
-                <div class="project" id="react">
+                <div class="project" id="react" onclick="window.open('https://github.com/PeterArriaza/hot-or-cold-guessing-game-react','_blank');" style="cursor: pointer;">
                     <div class="fontawesomeWrapper">
                         <i class="fab fa-react"></i>
-                        <h2>React Project Coming Soon!</h2>
+                        <h2>Guessing Game Built in React</h2>
                     </div>
+
                 </div>
-                <div class="project" id="random">
+                <div class="project" id="random" onclick="window.open('https://www.youtube.com/watch?v=-S3sNf3_Czw','_blank');" style="cursor: pointer;">
                     <div class="randomWrapper">
-                        <h2>Random Bits of Coding (Coming Soon!)</h2>
+                        <h2>My Senior Design Project at UPenn.</h2>
                     </div>
                 </div>
             </div>
