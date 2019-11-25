@@ -89,4 +89,22 @@ function highlightSection() {
     }
 };
 
+function prepareModals() {
+    var beerBellyModal = document.getElementById("beerBellyModal");
+    var beerBellyModalButton = document.getElementById("beerBelly");
+    var span = document.getElementsByClassName("activeModal")[0];
 
+    // need way to determine which project is being clicked
+    // maybe set the class onclick to active?
+
+    beerBellyModalButton.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+
+
+}
