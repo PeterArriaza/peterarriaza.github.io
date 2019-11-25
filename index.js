@@ -35,7 +35,7 @@ $('.scrollToSection').on('click', function () {
     let headerOffset = 70;
     if (classes.includes('aboutSection')) {
         $('html,body').animate({
-            scrollTop: ($("#about").offset().top) + headerOffset
+            scrollTop: ($("#about").offset().top) - headerOffset - 20
         }, 'slow');
         document.getElementById("sectionUnderline").classList.remove("highlightProjects");
         document.getElementById("sectionUnderline").classList.remove("highlightContact");
@@ -43,7 +43,7 @@ $('.scrollToSection').on('click', function () {
 
     } else if (classes.includes('projectSection')) {
         $('html,body').animate({
-            scrollTop: $("#projectSection").offset().top + headerOffset
+            scrollTop: $("#projectSection").offset().top -  headerOffset - 30
         }, 'slow');
         document.getElementById("sectionUnderline").classList.remove("highlightContact");
         document.getElementById("sectionUnderline").classList.remove("highlightAbout");
@@ -51,7 +51,7 @@ $('.scrollToSection').on('click', function () {
 
     } else if (classes.includes('contactSection')) {
         $('html,body').animate({
-            scrollTop: $("#contact").offset().top + headerOffset
+            scrollTop: $("#contact").offset().top - headerOffset - 20
         }, 'slow');
         document.getElementById("sectionUnderline").classList.remove("highlightProjects");
         document.getElementById("sectionUnderline").classList.remove("highlightAbout");
