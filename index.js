@@ -4,7 +4,7 @@
 //landing page
 $(document).ready(function () {
     document.querySelector("#introWords").classList.add("loaded");
-
+    $(prepareModals);
 });
 
 // make Navbar "stick" on scroll
@@ -92,17 +92,23 @@ function highlightSection() {
 function prepareModals() {
     var beerBellyModal = document.getElementById("beerBellyModal");
     var beerBellyModalButton = document.getElementById("beerBelly");
-    var span = document.getElementsByClassName("activeModal")[0];
+    var pantryModal = document.getElementById("pantryModal");
+    var pantryModalButton = document.getElementById("pantry");
+    var span = document.getElementsByClassName("close")[0];
 
     // need way to determine which project is being clicked
     // maybe set the class onclick to active?
 
     beerBellyModalButton.onclick = function () {
-        modal.style.display = "block";
+        beerBellyModal.style.display = "block";
+    }
+
+    pantryModalButton.onclick = function () {
+        pantryModal.style.display = "block";
     }
 
     span.onclick = function () {
-        modal.style.display = "none";
+        beerBellyModal.style.display = "none";
     }
 
 
