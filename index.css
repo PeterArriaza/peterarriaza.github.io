@@ -177,6 +177,7 @@ main {
 
 #contactHeader {
   background-color: var(--accent-orange);
+  width: 80%;
 }
 
 #projectSection {
@@ -280,7 +281,7 @@ main {
   font-size: 3em;
 }
 
-.fas {
+.fa-desktop {
   font-size: 2.5em;
   margin-left: 50px;
 }
@@ -314,7 +315,6 @@ main {
 }
 
 .contactLink {
-  /*    text-align: center;*/
   width: 30%;
 }
 
@@ -328,13 +328,9 @@ a:link {
   font-size: 2em;
 }
 
-#contact .textWrapper {
+.contact {
   text-align: center;
 }
-
-/* .spacer {
-  height: 50px;
-} */
 
 /*----------------MEDIA QUERY----------------*/
 @media screen and (max-width: 1020px) {
