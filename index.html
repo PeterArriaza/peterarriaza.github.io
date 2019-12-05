@@ -1,137 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Pete Arriaza's Portfolio</title>
     <!--    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">-->
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <link href="index.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway&display=swap"
+      rel="stylesheet"
+    />
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+  </head>
 
-</head>
-
-<body>
+  <body>
+    <!-- --------LANDING PAGE-------- -->
     <section id="intro">
-        <div id="introWords">
-            <div class="introWrapper scrollToSection aboutSection">
-                <h1>Hi there! I'm Pete Arriaza.</h1>
-            </div>
-            <div class="introWrapper scrollToSection projectSection">
-                <h1>I'm a full stack web developer.</h1>
-            </div>
-            <div class="introWrapper scrollToSection contactSection">
-                <h1>Let's make something exciting together!</h1>
-            </div>
+      <div id="introWords">
+        <div class="introWrapper scrollToSection aboutSection">
+          <h1>Hi there! I'm Pete Arriaza.</h1>
         </div>
-        <!--        <div id="introBorder"></div>-->
-        <div id="introPic"></div>
+        <div class="introWrapper scrollToSection projectSection">
+          <h1>I'm a full stack web developer.</h1>
+        </div>
+        <div class="introWrapper scrollToSection contactSection">
+          <h1>Let's make something exciting together!</h1>
+        </div>
+      </div>
+      <!--        <div id="introBorder"></div>-->
+      <div id="introPic"></div>
     </section>
 
+    <!-- --------NAV BAR-------- -->
+
     <nav id="navBar">
-        <div id="navLinksWrapper" class="navBarDiv">
-            <ul class="navLinks">
-                <li class="scrollToSection aboutSection" id="aboutLink">About Me</li>
-                <li class="scrollToSection projectSection" id="projectLink">Projects</li>
-                <li class="scrollToSection contactSection" id="contactLink">Contact Me</li>
-            </ul>
-        </div>
-        <div id="sectionUnderline" class="navBarDiv"></div>
+      <div id="navLinksWrapper" class="navBarDiv">
+        <ul class="navLinks">
+          <li class="scrollToSection aboutSection" id="aboutLink">About Me</li>
+          <li class="scrollToSection projectSection" id="projectLink">
+            Projects
+          </li>
+          <li class="scrollToSection contactSection" id="contactLink">
+            Contact Me
+          </li>
+        </ul>
+      </div>
+      <div id="sectionUnderline" class="navBarDiv"></div>
     </nav>
 
     <main>
-        <section id="about" class="textSection">
-            <div class="textWrapper">
-                <h1 class="sectionHeader" id="aboutHeader">About Me</h1>
-                <p>I currently work as a project engineer at a small full service engineering firm, where I mostly consult our clients on the safety and performance of their chemical processing systems. I am currently enrolled in the Thinkful online full stack web development bootcamp. </p>
+      <!-- --------ABOUT ME-------- -->
+      <section id="about" class="textSection">
+        <div class="textWrapper">
+          <h1 class="sectionHeader" id="aboutHeader">About Me</h1>
+          <p>
+            I currently work as a project engineer at a small full service
+            engineering firm, where I mostly consult our clients on the safety
+            and performance of their chemical processing systems. I am currently
+            enrolled in the Thinkful online full stack web development bootcamp.
+          </p>
 
-                <p>
-                    I am seeking a position as a web developer because I enjoy solving new problems and making products that help people. Engineering new designs and experiences is what I miss the most from my work with robotics and embedded systems in college and I believe a position as a web developer will allow me to have the largest impact on products that people will use every day. </p>
+          <p>
+            I am seeking a position as a web developer because I enjoy solving
+            new problems and making products that help people. Engineering new
+            designs and experiences is what I miss the most from my work with
+            robotics and embedded systems in college and I believe a position as
+            a web developer will allow me to have the largest impact on products
+            that people will use every day.
+          </p>
 
-                <p>In my free time, I play ultimate frisbee and practice yoga. I also enjoy jamming on my guitar and tackling various drawing and graphic design projects. I'm currently working on a mural to cover the exposed studs in my basement.
-                </p>
+          <p>
+            In my free time, I play ultimate frisbee and practice yoga. I also
+            enjoy jamming on my guitar and tackling various drawing and graphic
+            design projects. I'm currently working on a mural to cover the
+            exposed studs in my basement.
+          </p>
+        </div>
+      </section>
 
-            </div>
-        </section>
-
-        <section id="projectSection">
-            <h1 class="sectionHeader" id="projectHeader">Projects</h1>
-            <div class="projectRow">
-                <a href="#beerBellyModal">
-                    <div class="project" id="beerBelly">
-                    </div>
-                </a>
-                <div id="beerBellyModal" class="modal">
-                    <div class="modal-content">
-                        <a href="#close" title="Close" class="close">&times;</a>
-                        <p>A simple one page app integrating Google Maps and a database of beer selling locations to find beer near a location.</p>
-                        <a href="https://github.com/PeterArriaza/BeerBelly" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-                <a href="#pantryModal">
-
-                    <div class="project" id="pantry">
-                    </div>
-                </a>
-                <div id="pantryModal" class="modal">
-                    <div class="modal-content">
-                        <a href="#close" title="Close" class="close">&times;</a>
-                        <p>This app will help you keep track of what food you have in your home - who put it there, when they put it there, how much is left, and some insights about your food use and spending. Users create a "Pantry", which can be a specific refrigerator, cabinent, shelf, or location that you store food and then update it with their usage.</p>
-                        <a href="https://github.com/PeterArriaza/pantry" target="_blank"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="projectRow">
-                <div class="project" id="react" onclick="window.open('https://github.com/PeterArriaza/hot-or-cold-guessing-game-react','_blank');" style="cursor: pointer;">
-                    <div class="fontawesomeWrapper">
-                        <i class="fab fa-react"></i>
-                        <h2>Guessing Game Built in React</h2>
-                    </div>
-
-                </div>
-                <div class="project" id="random" onclick="window.open('https://www.youtube.com/watch?v=-S3sNf3_Czw','_blank');" style="cursor: pointer;">
-                    <div class="randomWrapper">
-                        <h2>My Senior Design Project at UPenn.</h2>
-                    </div>
-                </div>
+      <!-- --------PROJECTS-------- -->
+      <section id="projectSection">
+        <h1 class="sectionHeader" id="projectHeader">Projects</h1>
+        <div class="projectRow">
+          <!-- --------BEER BELLY-------- -->
+          <div class="project" id="beerBelly"></div>
+          <div id="beerBellyModal" class="modal">
+            <div class="modal-content">
+              <a title="Close" class="close">&times;</a>
+              <p>
+                A simple one page app integrating Google Maps and a database of
+                beer selling locations to find beer near a location.
+              </p>
+              <p>Tech Stack: JS, jQuery, Google Maps API</p>
+              <a
+                href="https://github.com/PeterArriaza/BeerBelly"
+                target="_blank"
+                title="Repo"
+                ><i class="fab fa-github"></i
+              ></a>
             </div>
 
-        </section>
-        <section id="contact" class="textSection">
-            <div class="textWrapper">
-                <h1 class="sectionHeader" id="contactHeader">Contact Me</h1>
-                <p>If you would like to work with me on a project, you can feel free to email me or follow the links below for further information about myself and my work:</p>
-                <div id="contactLinkRow">
-                    <div class="contactLink">
-                        <a href="docs/Arriaza%20Resume.pdf" target="_blank"><i class="far fa-file"></i>
-                            <p>Resume</p>
-                        </a>
-                    </div>
-                    <div class="contactLink">
-                        <a href="https://www.linkedin.com/in/peterarriaza/" target="_blank"><i class="fab fa-linkedin"></i>
-                            <p>Connect with me on LinkedIn!</p>
-                        </a>
-                    </div>
-                    <div class="contactLink">
-                        <a href="https://pada.org/" target="_blank"><i class="fas fa-tree"></i>
-                            <p>Come throw a frisbee with me!</p>
-                        </a>
-                    </div>
-                </div>
-                <h3>Thanks for visiting! I look forward to speaking with you soon!</h3>
-                <div class="spacer"></div>
-
+            <!-- --------PANTRY-------- -->
+          </div>
+          <div class="project" id="pantry"></div>
+          <div id="pantryModal" class="modal">
+            <div class="modal-content">
+              <a title="Close" class="close">&times;</a>
+              <p>
+                This app will help you keep track of what food you have in your
+                home - who put it there, when they put it there, how much is
+                left, and some insights about your food use and spending. Users
+                create a "Pantry", which can be a specific refrigerator,
+                cabinent, shelf, or location that you store food and then update
+                it with their usage.
+              </p>
+              <p>
+                Tech Stack: JS/jQuery, Mongoose/Express, Mocha/Chai, Travis CI,
+                Heroku
+              </p>
+              <a
+                href="https://github.com/PeterArriaza/pantry"
+                target="_blank"
+                title="Repo"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://pantry-food-management.herokuapp.com/"
+                target="_blank"
+                title="Demo"
+              >
+                <i class="fas fa-desktop"></i>
+              </a>
             </div>
-        </section>
+          </div>
+        </div>
+
+        <div class="projectRow">
+          <!-- --------REACT-------- -->
+          <a id="reactWrapper">
+            <div class="project" id="react">
+              <div class="projectDescriptionWrapper">
+                <i class="fab fa-react"></i>
+                <h2 class="textButton">React Guessing Game</h2>
+              </div>
+            </div>
+          </a>
+          <div id="reactModal" class="modal">
+            <div class="modal-content">
+              <a title="Close" class="close">&times;</a>
+              <p>Simple 1-100 guessing game built in React.</p>
+              <p>Tech Stack: React</p>
+              <a
+                href="https://github.com/PeterArriaza/hot-or-cold-guessing-game-react"
+                target="_blank"
+                title="Repo"
+                ><i class="fab fa-github"></i>
+              </a>
+              <a
+                href="https://glacial-springs-34143.herokuapp.com/"
+                target="_blank"
+                title="Demo"
+              >
+                <i class="fas fa-desktop"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- --------UPENN-------- -->
+          <div class="project" id="UPenn">
+            <div class="projectDescriptionWrapper">
+              <h2 class="textButton">My Senior Design Project at UPenn</h2>
+            </div>
+          </div>
+          <div id="UPennModal" class="modal">
+            <div class="modal-content">
+              <a title="Close" class="close">&times;</a>
+              <p>
+                My Senior Design Project at the University of Pennsylvania.
+                Developed wireless attachment to convert manual wheelchair to be
+                electrically powered.
+              </p>
+              <a
+                href="https://www.youtube.com/watch?v=-S3sNf3_Czw"
+                target="_blank"
+              >
+                <i class="fab fa-youtube"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="textSection">
+        <div class="textWrapper">
+          <h1 class="sectionHeader" id="contactHeader">Contact Me</h1>
+          <p>
+            If you would like to work with me on a project, you can feel free to
+            email me or follow the links below for further information about
+            myself and my work:
+          </p>
+          <div id="contactLinkRow">
+            <div class="contactLink">
+              <a href="docs/Arriaza%20Resume.pdf" target="_blank"
+                ><i class="far fa-file"></i>
+                <p>Resume</p>
+              </a>
+            </div>
+            <div class="contactLink">
+              <a
+                href="https://www.linkedin.com/in/peterarriaza/"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i>
+                <p>Connect with me on LinkedIn!</p>
+              </a>
+            </div>
+            <div class="contactLink">
+              <a href="https://pada.org/" target="_blank"
+                ><i class="fas fa-tree"></i>
+                <p>Come throw a frisbee with me!</p>
+              </a>
+            </div>
+          </div>
+          <h3>
+            Thanks for visiting! I look forward to speaking with you soon!
+          </h3>
+        </div>
+      </section>
     </main>
+  </body>
 
-</body>
-
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-<script src="index.js" type="text/javascript" charset="utf-8"></script>
-
-
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"
+  ></script>
+  <script src="index.js" type="text/javascript" charset="utf-8"></script>
 </html>
