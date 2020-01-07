@@ -297,7 +297,7 @@ main {
   transform: translate(-50%, -50%);
 }
 
-#UPenn {
+#reactNative {
   background-color: var(--accent-white);
   color: black;
   text-align: center;

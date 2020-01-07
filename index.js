@@ -134,14 +134,14 @@ function openAndCloseModals() {
   let beerBellyButton = document.getElementById("beerBelly");
   let pantryButton = document.getElementById("pantry");
   let reactButton = document.getElementById("react");
-  let UPennButton = document.getElementById("UPenn");
+  let reactNativeButton = document.getElementById("reactNative");
   let reactDescriptionButton = document.getElementsByClassName("fa-react");
   let textButtons = document.getElementsByClassName("textButton");
 
   let beerBellyModal = document.getElementById("beerBellyModal");
   let pantryModal = document.getElementById("pantryModal");
   let reactModal = document.getElementById("reactModal");
-  let UPennModal = document.getElementById("UPennModal");
+  let reactNativeModal = document.getElementById("reactNativeModal");
 
   let closeModal = document.getElementsByClassName("close");
 
@@ -162,11 +162,11 @@ function openAndCloseModals() {
       case textButtons[0]:
         reactModal.style.display = "block";
         break;
-      case UPennButton:
-        UPennModal.style.display = "block";
+      case reactNativeButton:
+        reactNativeModal.style.display = "block";
         break;
       case textButtons[1]:
-        UPennModal.style.display = "block";
+        reactNativeModal.style.display = "block";
         break;
       case beerBellyModal:
         beerBellyModal.style.display = "none";
@@ -177,8 +177,8 @@ function openAndCloseModals() {
       case reactModal:
         reactModal.style.display = "none";
         break;
-      case UPennModal:
-        UPennModal.style.display = "none";
+      case reactNativeModal:
+        reactNativeModal.style.display = "none";
         break;
       case closeModal[0]:
         event.target.parentElement.parentElement.style.display = "none";
