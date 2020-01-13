@@ -203,8 +203,8 @@ main {
   cursor: pointer;
 }
 
-#beerBelly {
-  background-image: url(img/beerBelly.png);
+#northOrSouth {
+  background-image: url(img/northOrSouth.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;

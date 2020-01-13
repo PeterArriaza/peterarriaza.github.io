@@ -131,14 +131,14 @@ function highlightSection() {
 }
 
 function openAndCloseModals() {
-  let beerBellyButton = document.getElementById("beerBelly");
+  let northOrSouthButton = document.getElementById("northOrSouth");
   let pantryButton = document.getElementById("pantry");
   let reactButton = document.getElementById("react");
   let reactNativeButton = document.getElementById("reactNative");
   let reactDescriptionButton = document.getElementsByClassName("fa-react");
   let textButtons = document.getElementsByClassName("textButton");
 
-  let beerBellyModal = document.getElementById("beerBellyModal");
+  let northOrSouthModal = document.getElementById("northOrSouthModal");
   let pantryModal = document.getElementById("pantryModal");
   let reactModal = document.getElementById("reactModal");
   let reactNativeModal = document.getElementById("reactNativeModal");
@@ -147,8 +147,8 @@ function openAndCloseModals() {
 
   window.onclick = function(event) {
     switch (event.target) {
-      case beerBellyButton:
-        beerBellyModal.style.display = "block";
+      case northOrSouthButton:
+        northOrSouthModal.style.display = "block";
         break;
       case pantryButton:
         pantryModal.style.display = "block";
@@ -168,8 +168,8 @@ function openAndCloseModals() {
       case textButtons[1]:
         reactNativeModal.style.display = "block";
         break;
-      case beerBellyModal:
-        beerBellyModal.style.display = "none";
+      case northOrSouthModal:
+        northOrSouthModal.style.display = "none";
         break;
       case pantryModal:
         pantryModal.style.display = "none";
