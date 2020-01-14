@@ -137,11 +137,15 @@ function openAndCloseModals() {
   let reactNativeButton = document.getElementById("reactNative");
   let reactDescriptionButton = document.getElementsByClassName("fa-react");
   let textButtons = document.getElementsByClassName("textButton");
+  let septaViewButton = document.getElementById("septaView");
+  let phlaskButton = document.getElementById("phlask");
 
   let northOrSouthModal = document.getElementById("northOrSouthModal");
   let pantryModal = document.getElementById("pantryModal");
   let reactModal = document.getElementById("reactModal");
   let reactNativeModal = document.getElementById("reactNativeModal");
+  let septaViewModal= document.getElementById("septaViewModal");
+  let phlaskModal= document.getElementById("phlaskModal");
 
   let closeModal = document.getElementsByClassName("close");
 
@@ -180,6 +184,18 @@ function openAndCloseModals() {
       case reactNativeModal:
         reactNativeModal.style.display = "none";
         break;
+      case septaViewButton:
+        septaViewModal.style.display = "block";
+        break;
+      case septaViewModal:
+        septaViewModal.style.display = "none";
+        break;
+      case phlaskButton:
+        phlaskModal.style.display = "block";
+        break;
+      case phlaskModal:
+        phlaskModal.style.display = "none";
+        break;
       case closeModal[0]:
         event.target.parentElement.parentElement.style.display = "none";
         break;
@@ -190,6 +206,12 @@ function openAndCloseModals() {
         event.target.parentElement.parentElement.style.display = "none";
         break;
       case closeModal[3]:
+        event.target.parentElement.parentElement.style.display = "none";
+        break;
+      case closeModal[4]:
+        event.target.parentElement.parentElement.style.display = "none";
+        break;
+      case closeModal[5]:
         event.target.parentElement.parentElement.style.display = "none";
         break;
     }

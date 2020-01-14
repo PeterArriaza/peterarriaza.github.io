@@ -207,7 +207,7 @@ main {
   background-image: url(img/northOrSouth.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: auto;
+  background-size: 200px;
   background-color: var(--accent-green);
 }
 
@@ -302,6 +302,21 @@ main {
   color: black;
   text-align: center;
   position: relative;
+}
+
+#septaView {
+  background-color: var(--accent-green);
+  color: black;
+  text-align: center;
+  position: relative;
+}
+
+#phlask {
+  background-image: url(img/phlask-text-logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-color: var(--accent-blue);
 }
 
 #contact {
@@ -408,6 +423,18 @@ a:link {
 
   .contactLink {
     width: 100%;
+  }
+
+  .fa-react {
+    font-size: 5em;
+  }
+
+  #phlask {
+    background-size: 250px;
+  }
+
+  .project {
+    padding: 5px;
   }
 }
 
