@@ -37,7 +37,6 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-self: flex-end;
-  /*    border-right: 10px solid var(--accent-white);*/
 }
 
 #introPic {
@@ -73,7 +72,7 @@ body {
 
 #navBar {
   background-color: var(--accent-white);
-  height: 100px;
+  height: 80px;
   display: flex;
   flex-direction: column;
 }

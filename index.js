@@ -144,8 +144,8 @@ function openAndCloseModals() {
   let pantryModal = document.getElementById("pantryModal");
   let reactModal = document.getElementById("reactModal");
   let reactNativeModal = document.getElementById("reactNativeModal");
-  let septaViewModal= document.getElementById("septaViewModal");
-  let phlaskModal= document.getElementById("phlaskModal");
+  let septaViewModal = document.getElementById("septaViewModal");
+  let phlaskModal = document.getElementById("phlaskModal");
 
   let closeModal = document.getElementsByClassName("close");
 
