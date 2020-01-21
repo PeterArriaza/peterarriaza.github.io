@@ -306,6 +306,10 @@ main {
 
 #septaView {
   background-color: var(--accent-green);
+  background-image: url(img/septa-view-logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20em;
   color: black;
   text-align: center;
   position: relative;
