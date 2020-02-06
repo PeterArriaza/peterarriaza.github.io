@@ -1,5 +1,5 @@
 # My Full Stack Developer Portfolio
-[bit.ly/peter-arriaza](http://bit.ly/peter-arriaza)
+[peterarriaza.github.io](https://peterarriaza.github.io)
 
 A website to showcase my talents as a developer and how to get in touch with me.  
 
