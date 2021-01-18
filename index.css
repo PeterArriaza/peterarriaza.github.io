@@ -196,6 +196,14 @@ main {
 .project {
   width: 400px;
   height: 400px;
+  background-color: var(--accent-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.project:nth-child(n+2) {
+  background-color: var(--accent-green);
 }
 
 .project:hover {
@@ -207,7 +215,7 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 200px;
-  background-color: var(--accent-green);
+  background-color: var(--accent-orange);
 }
 
 .modal {
@@ -266,11 +274,9 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
-  background-color: var(--accent-blue);
 }
 
 #react {
-  background-color: var(--accent-orange);
   color: black;
   position: relative;
   text-align: center;
@@ -297,14 +303,13 @@ main {
 }
 
 #reactNative {
-  background-color: var(--accent-white);
   color: black;
   text-align: center;
   position: relative;
+  background-color: var(--accent-orange);
 }
 
 #septaView {
-  background-color: var(--accent-green);
   background-image: url(img/septa-view-logo.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -319,7 +324,6 @@ main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
-  background-color: var(--accent-blue);
 }
 
 #contact {
@@ -342,11 +346,20 @@ a:link {
   text-decoration: none;
 }
 
+p > .showLink {
+  text-decoration: underline;
+  color: var(--accent-blue);
+}
+
 .contactLink a i {
   font-size: 2em;
 }
 
 .contact {
+  text-align: center;
+}
+
+.projectCaption {
   text-align: center;
 }
 

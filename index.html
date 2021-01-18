@@ -60,36 +60,92 @@
         <div class="textWrapper">
           <h1 class="sectionHeader" id="aboutHeader">About Me</h1>
           <p>
-            I currently work as a project engineer at a small full service
-            engineering firm, where I mostly consult our clients on the safety
-            and performance of their chemical processing systems. I am currently
-            enrolled in the Thinkful online full stack web development bootcamp.
+            I currently work as a software engineer for the <a class="showLink" href="https://nbme.org" title="NBME Website" target="_blank">National Board of Medical Examiners</a>, where I maintain backend microservices and batch jobs used in scoring and delivering exam results.  I primarily use Java with Spring Boot and use Hibernate/JPA to interface with our Oracle databases.  I transitioned to this position in June 2020 after graduating from the University of Pennsylvania in 2016 and working as a mechanical engineer for four years.  I completed the Thinkful part time bootcamp for fullstack web development in 2019. 
           </p>
 
           <p>
-            I am seeking a position as a web developer because I enjoy solving
-            new problems and making products that help people. Engineering new
-            designs and experiences is what I miss the most from my work with
-            robotics and embedded systems in college and I believe a position as
-            a web developer will allow me to have the largest impact on products
-            that people will use every day.
+            In 2019 I joined <a href="https://beta.phlask.me/mission" class="showLink" title="Phlask mission" target="_blank">Phlask</a>, a <a href="https://codeforphilly.org/" title="Code for Philly" target="_blank" class="showLink">Code For Philly project</a>, whose goal is to build a web app that allows people to find free water and food in Philadelphia.  We hope that through the app, people are empowered to ask (hence phl-ask) for things that we feel everyone should have access to.  On the team I am a lead front end React developer and build out features that we have collaboratively identified as priority issues.  We use Slack to communicate, Github for version control and issue tracking, and Figma for design work.  Our app uses Google Firebase to house our pin locations and is deployed through a Docker container that is hosted on AWS.  
           </p>
 
           <p>
-            In my free time, I play ultimate frisbee and practice yoga. I also
-            enjoy jamming on my guitar and tackling various drawing and graphic
-            design projects. 
+            In my free time, I play ultimate frisbee and practice yoga. Quarantine has lead to a revival in my golf game and I'm now a 15 handicap.  I'm also a volunteer tree tender with the Pennsylvania Horitcultural Society. 
           </p>
         </div>
       </section>
 
       <!-- --------PROJECTS-------- -->
       <section id="projectSection">
+
+
         <h1 class="sectionHeader" id="projectHeader">Projects</h1>
+
+        <div class="projectRow">
+           <!-- --------PHLASK-------- -->
+           <div class="project" id="phlask"></div>
+           <div id="phlaskModal" class="modal">
+             <div class="modal-content">
+               <a title="Close" class="close">&times;</a>
+               <p>
+                 An open source progressive web app originating from
+                 <a>Code for Philly</a> that allows users to find their nearest
+                 water bottle refill tap in Philadelphia. Markers are overlaid on
+                 a custom Google Maps UI and display information about the
+                 business and water quality data, if available. I contributed
+                 some of the front end React components and interactivity.
+               </p>
+               <p>
+                 Tech Stack: React, React Bootstrap, AWS S3 & CloudFront, Google
+                 Maps API
+               </p>
+               <a
+                 href="https://github.com/phlask/phlask-map"
+                 target="_blank"
+                 title="Repo"
+                 ><i class="fab fa-github"></i
+               ></a>
+               <a
+                 href="https://beta.phlask.me/"
+                 target="_blank"
+                 title="Beta Site"
+               >
+                 <i class="fas fa-desktop"></i>
+               </a>
+             </div>
+           </div>
+         </div>
+          <!-- --------SEPTA View-------- -->
+          <div class="project" id="septaView"></div>
+          <div id="septaViewModal" class="modal">
+            <div class="modal-content">
+              <a title="Close" class="close">&times;</a>
+              <p>
+                A fullstack React app that uses SEPTA GTFS-realtime data to
+                allow users to favorite the routes they use most often and see a
+                dashboard the statuses of those routes.
+              </p>
+              <p>
+                Tech Stack: React (w/ Redux, Router, Redux-Forms), Node, MongoDB
+              </p>
+              <a
+                href="https://github.com/PeterArriaza/SEPTA-View"
+                target="_blank"
+                title="Repo"
+                ><i class="fab fa-github"></i
+              ></a>
+              <a
+                href="https://septa-view.herokuapp.com/"
+                target="_blank"
+                title="Demo"
+              >
+                <i class="fas fa-desktop"></i>
+              </a>
+            </div>
+          </div>
+
         <div class="projectRow">
           <!-- --------North or South-------- -->
           <div class="project" id="northOrSouth">
-            <p align="center">A simple, interactive API hack.</p>
+            <p class="projectCaption">A simple, interactive API hack.</p>
           </div>
           <div id="northOrSouthModal" class="modal">
             <div class="modal-content">
@@ -126,7 +182,7 @@
             <!-- --------PANTRY-------- -->
           </div>
           <div class="project" id="pantry">
-            <p align="center">My first time building an API.</p>
+            <p class="projectCaption">My first time building an API.</p>
           </div>
           <div id="pantryModal" class="modal">
             <div class="modal-content">
@@ -162,7 +218,7 @@
 
         <div class="projectRow">
           <!-- --------REACT-------- -->
-          <a id="reactWrapper">
+          <!-- <a id="reactWrapper"> -->
             <div class="project" id="react">
               <div class="projectDescriptionWrapper">
                 <i class="fab fa-react"></i>
@@ -170,7 +226,7 @@
                 <p>When I fell in love with Redux...</p>
               </div>
             </div>
-          </a>
+          <!-- </a> -->
           <div id="reactModal" class="modal">
             <div class="modal-content">
               <a title="Close" class="close">&times;</a>
@@ -222,70 +278,6 @@
                 target="_blank"
               >
                 <i class="fab fa-github"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="projectRow">
-          <!-- --------SEPTA View-------- -->
-          <div class="project" id="septaView"></div>
-          <div id="septaViewModal" class="modal">
-            <div class="modal-content">
-              <a title="Close" class="close">&times;</a>
-              <p>
-                A fullstack React app that uses SEPTA GTFS-realtime data to
-                allow users to favorite the routes they use most often and see a
-                dashboard the statuses of those routes.
-              </p>
-              <p>
-                Tech Stack: React (w/ Redux, Router, Redux-Forms), Node, MongoDB
-              </p>
-              <a
-                href="https://github.com/PeterArriaza/SEPTA-View"
-                target="_blank"
-                title="Repo"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a
-                href="https://septa-view.herokuapp.com/"
-                target="_blank"
-                title="Demo"
-              >
-                <i class="fas fa-desktop"></i>
-              </a>
-            </div>
-
-            <!-- --------PHLASK-------- -->
-          </div>
-          <div class="project" id="phlask"></div>
-          <div id="phlaskModal" class="modal">
-            <div class="modal-content">
-              <a title="Close" class="close">&times;</a>
-              <p>
-                An open source progressive web app originating from
-                <a>Code for Philly</a> that allows users to find their nearest
-                water bottle refill tap in Philadelphia. Markers are overlaid on
-                a custom Google Maps UI and display information about the
-                business and water quality data, if available. I contributed
-                some of the front end React components and interactivity.
-              </p>
-              <p>
-                Tech Stack: React, React Bootstrap, AWS S3 & CloudFront, Google
-                Maps API
-              </p>
-              <a
-                href="https://github.com/phlask/phlask-map"
-                target="_blank"
-                title="Repo"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a
-                href="https://beta.phlask.me/"
-                target="_blank"
-                title="Beta Site"
-              >
-                <i class="fas fa-desktop"></i>
               </a>
             </div>
           </div>
