@@ -91,9 +91,21 @@ function highlightSection() {
   let projectPos =
     document.getElementById("projectSection").offsetTop -
     document.getElementById("about").offsetHeight / 2;
+
+  let contactElement = document.getElementById("contact");
+  let computedStyle = getComputedStyle(contactElement);
+
+  let elementHeight = contactElement.clientHeight;  // height with padding
+  let elementWidth = contactElement.clientWidth;   // width with padding
+
+  elementHeight -= parseFloat(computedStyle.paddingTop) + parseFloat(computedStyle.paddingBottom);
+  // elementWidth -= parseFloat(computedStyle.paddingLeft) + parseFloat(computedStyle.paddingRight);
+
   let contactPos =
-    document.getElementById("contact").offsetTop -
-    document.getElementById("projectSection").offsetHeight / 5;
+    document.getElementById("projectSection").offsetTop +
+    document.getElementById("projectSection").offsetHeight -
+    window.innerHeight +
+    elementHeight;
   let currentPos = window.pageYOffset;
 
   if (currentPos >= aboutPos && currentPos < projectPos) {
